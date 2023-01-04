@@ -1,6 +1,6 @@
-/* .attribution { font-size: 11px; text-align: center; }
+.attribution { font-size: 11px; text-align: center; }
 
-.attribution a { color: hsl(228, 45%, 44%); } */
+.attribution a { color: hsl(228, 45%, 44%); }
 
 * {
     margin: 0;
@@ -9,6 +9,71 @@
 }
 
 body {
+    font-family: 'Outfit', sans-serif;
+    background: hsl(212, 45%, 89%);
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
 
+p {
+    font-size: 15px;
+}
+
+.container {
+    overflow: hidden;
+    background: hsl(0, 0%, 100%);
+    width: 300px;
+    height: 450px;
+    padding: 1rem;
+    border-radius: 15px;
+
+    /* display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center; */
+
+    text-align: center;
+}
+
+.img-container {
+    padding: 0;
+    overflow: hidden;
+    max-width: 300px;
+    max-height: 300px;
+}
+
+.img-container img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+.text-container p:first-child {
+    font-size: 17px;
+    font-weight: 700;
+    margin: 1rem 0rem;
+}
+
+.text-container p:last-child {
+    color: hsl(220, 15%, 55%);   
+}
+
+/* I hope you guys don't mind this.. */
+footer {
+    position: absolute;
+    bottom: 0;
+    background: hsl(0, 0%, 100%);
+    width: 100%;
+    padding: 1rem;
+}
+
+@media screen and (max-width: 500px)  {
+    footer {
+        display: none;
+    }
 }
 
